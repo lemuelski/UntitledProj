@@ -1,7 +1,9 @@
 package com.mygdx.custom;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Group;
 import com.mygdx.final_values.AssetList;
 
@@ -33,6 +35,37 @@ public class TargetGrid extends Group {
         targetGrid20 = new GJActor(target);
         targetGrid21 = new GJActor(target);
         targetGrid22 = new GJActor(target);
+        
+        this.addActor(targetGrid00);
+        this.addActor(targetGrid01);
+        this.addActor(targetGrid01);
+        this.addActor(targetGrid10);
+        this.addActor(targetGrid11);
+        this.addActor(targetGrid12);
+        this.addActor(targetGrid20);
+        this.addActor(targetGrid21);
+        this.addActor(targetGrid22);
+        
+        int row=0;
+        int col = 0;
+        
+        for (Actor actor:this.getChildren()){
+            actor.setName(""+row+col);
+            actor.setX((col*actor.getWidth()));
+            actor.setY(row*actor.getHeight());
+            if (col==2){
+                col =0;
+                row++;
+            }
+            else{
+                col++;    
+            }
+        }
+        
+        for (Actor actor:this.getChildren()){
+            Gdx.app.log("lem", actor.getName());
+        }
+        
     }
 
 }

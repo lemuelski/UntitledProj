@@ -45,3 +45,10 @@ whitemage
   orig: 89, 127
   offset: 0, 0
   index: -1
+target
+  rotate: false
+  xy: 183, 63
+  size: 88, 65
+  orig: 88, 65
+  offset: 0, 0
+  index: -1
