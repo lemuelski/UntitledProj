@@ -5,7 +5,7 @@ public class AssetList {
 
     public enum Assets {
 
-        ATLAS_GAMESCREEN("atlas/gamescreen.pack"),
+        ATLAS_GAMESCREEN("gamescreen.pack"),
 
         ASSET_FIGHTER("fighter"),
         ASSET_WHITEMAGE("whitemage"),

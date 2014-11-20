@@ -1,8 +1,12 @@
 package com.mygdx.custom;
 
+import javafx.scene.PerspectiveCamera;
+
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.utils.viewport.FitViewport;
+import com.badlogic.gdx.utils.viewport.StretchViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.mygdx.game.MyGdxGame;
 
@@ -12,10 +16,10 @@ public class GJScreen implements Screen {
     protected MyGdxGame game;
     protected Viewport viewport;
     
+    
     public GJScreen(MyGdxGame game){
-        this.game = game;
-        stage = new Stage( );
-        viewport= new FitViewport(game.WIDTH, game.HEIGHT);
+        this.game = game;    
+        stage = new Stage( new StretchViewport(MyGdxGame.WIDTH, MyGdxGame.HEIGHT));
     }
     
     @Override
@@ -26,7 +30,8 @@ public class GJScreen implements Screen {
 
     @Override
     public void resize(int width, int height) {
-        stage.setViewport(viewport);
+        stage.getViewport().update(width, height, true);
+        
     }
 
     @Override

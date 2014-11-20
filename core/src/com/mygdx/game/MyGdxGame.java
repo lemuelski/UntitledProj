@@ -2,22 +2,18 @@ package com.mygdx.game;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.mygdx.screen.PreBattleScreen;
 
 public class MyGdxGame extends Game {
 
     public static final int HEIGHT = 720;
     public static final int WIDTH = 480;
     
-    private OrthographicCamera camera;
-    
 	@Override
 	public void create () {
-		camera = new OrthographicCamera(WIDTH, HEIGHT);
-		camera.setToOrtho(false);
+		this.setScreen(new PreBattleScreen(this));
 	}
 
 	@Override
