@@ -1,25 +1,18 @@
 package com.mygdx.custom;
 
-import javafx.scene.PerspectiveCamera;
-
 import com.badlogic.gdx.Screen;
-import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.utils.viewport.FitViewport;
-import com.badlogic.gdx.utils.viewport.StretchViewport;
-import com.badlogic.gdx.utils.viewport.Viewport;
 import com.mygdx.game.MyGdxGame;
 
 public class GJScreen implements Screen {
 
     protected Stage stage;
     protected MyGdxGame game;
-    protected Viewport viewport;
-    
     
     public GJScreen(MyGdxGame game){
         this.game = game;    
-        stage = new Stage( new StretchViewport(MyGdxGame.WIDTH, MyGdxGame.HEIGHT));
+        stage = new Stage(new FitViewport(MyGdxGame.WIDTH, MyGdxGame.HEIGHT));
     }
     
     @Override

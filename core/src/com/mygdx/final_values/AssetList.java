@@ -12,8 +12,9 @@ public class AssetList {
         ASSET_REDMAGE("redmage"),
         ASSET_VIKING("viking"),
         ASSET_WARRIOR("warrior"),
-        ASSET_BG_FIELD("battleback");
-
+        ASSET_BG_FIELD("battleback"),
+        ASSET_TARGET("target");
+        
         private String filepath;
 
         private Assets(String filepath) {
