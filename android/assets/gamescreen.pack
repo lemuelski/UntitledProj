@@ -1,0 +1,47 @@
+
+gamescreen.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+battleback
+  rotate: false
+  xy: 1, 130
+  size: 640, 320
+  orig: 640, 320
+  offset: 0, 0
+  index: -1
+fighter
+  rotate: false
+  xy: 1, 1
+  size: 89, 127
+  orig: 89, 127
+  offset: 0, 0
+  index: -1
+redmage
+  rotate: false
+  xy: 643, 323
+  size: 89, 127
+  orig: 89, 127
+  offset: 0, 0
+  index: -1
+viking
+  rotate: false
+  xy: 92, 1
+  size: 89, 127
+  orig: 89, 127
+  offset: 0, 0
+  index: -1
+warrior
+  rotate: false
+  xy: 643, 194
+  size: 89, 127
+  orig: 89, 127
+  offset: 0, 0
+  index: -1
+whitemage
+  rotate: false
+  xy: 734, 323
+  size: 89, 127
+  orig: 89, 127
+  offset: 0, 0
+  index: -1
