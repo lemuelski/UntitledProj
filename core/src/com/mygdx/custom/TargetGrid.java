@@ -26,6 +26,7 @@ public class TargetGrid extends Group {
     public TargetGrid(){
         atlas = new TextureAtlas(AssetList.Assets.ATLAS_GAMESCREEN.getPath());
         target = atlas.findRegion(AssetList.Assets.ASSET_TARGET.getPath());
+<<<<<<< HEAD
         targetGrid00 = new GJUnitGrid("00");
         targetGrid01 = new GJUnitGrid("01");
         targetGrid02 = new GJUnitGrid("02");
@@ -39,6 +40,21 @@ public class TargetGrid extends Group {
         this.addActor(targetGrid00);
         this.addActor(targetGrid01);
         this.addActor(targetGrid02);
+=======
+        targetGrid00 = new GJActor(target);
+        targetGrid01 = new GJActor(target);
+        targetGrid02 = new GJActor(target);
+        targetGrid10 = new GJActor(target);
+        targetGrid11 = new GJActor(target);
+        targetGrid12 = new GJActor(target);
+        targetGrid20 = new GJActor(target);
+        targetGrid21 = new GJActor(target);
+        targetGrid22 = new GJActor(target);
+        
+        this.addActor(targetGrid00);
+        this.addActor(targetGrid01);
+        this.addActor(targetGrid01);
+>>>>>>> 83bbf345b3c11cc57efc3ee7958bba24fa9c1ce9
         this.addActor(targetGrid10);
         this.addActor(targetGrid11);
         this.addActor(targetGrid12);
@@ -50,7 +66,11 @@ public class TargetGrid extends Group {
         int col = 0;
         
         for (Actor actor:this.getChildren()){
+<<<<<<< HEAD
             Gdx.app.log("lem", "inside");
+=======
+            actor.setName(""+row+col);
+>>>>>>> 83bbf345b3c11cc57efc3ee7958bba24fa9c1ce9
             actor.setX((col*actor.getWidth()));
             actor.setY(row*actor.getHeight());
             if (col==2){
@@ -60,7 +80,16 @@ public class TargetGrid extends Group {
             else{
                 col++;    
             }
+<<<<<<< HEAD
         } 
+=======
+        }
+        
+        for (Actor actor:this.getChildren()){
+            Gdx.app.log("lem", actor.getName());
+        }
+        
+>>>>>>> 83bbf345b3c11cc57efc3ee7958bba24fa9c1ce9
     }
 
 }

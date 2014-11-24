@@ -7,7 +7,10 @@ import com.badlogic.gdx.scenes.scene2d.Group;
 import com.mygdx.custom.GJActor;
 import com.mygdx.custom.GJClickableActor;
 import com.mygdx.custom.GJScreen;
+<<<<<<< HEAD
 import com.mygdx.custom.GJThumbnail;
+=======
+>>>>>>> 83bbf345b3c11cc57efc3ee7958bba24fa9c1ce9
 import com.mygdx.custom.TargetGrid;
 import com.mygdx.final_values.AssetList;
 import com.mygdx.final_values.ConstantPositions;
@@ -39,15 +42,25 @@ public class PreBattleScreen extends GJScreen{
         
         topPortion.setWidth(MyGdxGame.WIDTH);
         topPortion.setHeight(MyGdxGame.HEIGHT/2);
+<<<<<<< HEAD
 
+=======
+        
+        
+        
+>>>>>>> 83bbf345b3c11cc57efc3ee7958bba24fa9c1ce9
         topPortion.setY(MyGdxGame.HEIGHT-topPortion.getHeight());
         fighter.setScale(0.8f);
         fighter.setY(topPortion.getHeight()/2 - (fighter.getHeight()/2+ConstantPositions.SPACING_XSMALL));
 
         topPortion.addActor(background);
         topPortion.addActor(targetGrid);
+<<<<<<< HEAD
        
         topPortion.addActor(thumbnail);
+=======
+        topPortion.addActor(fighter);
+>>>>>>> 83bbf345b3c11cc57efc3ee7958bba24fa9c1ce9
         
         stage.addActor(topPortion);
         Gdx.input.setInputProcessor(stage);

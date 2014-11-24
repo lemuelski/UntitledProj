@@ -52,6 +52,7 @@ target
   orig: 88, 65
   offset: 0, 0
   index: -1
+<<<<<<< HEAD
 thumb-bg
   rotate: false
   xy: 643, 132
@@ -66,3 +67,5 @@ thumb-fighter
   orig: 67, 60
   offset: 0, 0
   index: -1
+=======
+>>>>>>> 83bbf345b3c11cc57efc3ee7958bba24fa9c1ce9
