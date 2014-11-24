@@ -45,3 +45,24 @@ whitemage
   orig: 89, 127
   offset: 0, 0
   index: -1
+target
+  rotate: false
+  xy: 183, 63
+  size: 88, 65
+  orig: 88, 65
+  offset: 0, 0
+  index: -1
+thumb-bg
+  rotate: false
+  xy: 643, 132
+  size: 67, 60
+  orig: 67, 60
+  offset: 0, 0
+  index: -1
+thumb-fighter
+  rotate: false
+  xy: 734, 261
+  size: 67, 60
+  orig: 67, 60
+  offset: 0, 0
+  index: -1
